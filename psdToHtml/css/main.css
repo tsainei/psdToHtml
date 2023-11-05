@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6vh;
+}
+
+header {
+  background: url("../images/hero.jpg");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 575.98px) {
+  header {
+    background-position: 37% 5% !important;
+  }
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.logo {
+  background-image: url("../images/Logo.png") no-repeat top left cover;
+}
+
+#history {
+  background-image: url('../images/mountains2.jpg');
+  background-size: cover, contain;
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+}
+
+/* Carousel ----------------------------------------------------------- */
+#carousel-div {
+  height: 25vh;
+  margin-top: -25vh;
+  width: 100% !important;
+  background-color: rgba(65, 79, 107, .85);
+  border-top: .2px solid white;
+}
+
+#carouselExampleIndicators {
+  height: 20vh;
+}
+
+.carousel-indicators {
+  bottom: -50px !important;
+}
+
+.carousel-indicators li {
+  display: block;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+}
+
+.carousel {
+  width: 100vw;
+
+}
+
+.slide-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 575.98px) {
+  .slide-box img {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box img {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box img {
+    flex: 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 4px;
+  }
+}
+
+@media (min-width: 992px) {
+  .slide-box img {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 5px;
+  }
+}
+/* Team ------------------------------------------------------------- */
+#team {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  #team {
+    display: block;
+  }
+}
+
+.tabs-background {
+  height: vw;
+  background-color: #414f6b;
+}
+
+.tabs a {
+  font-family: 'Oswald', sans-serif;
+  color: #b0b4be;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #414f6b;
+}
+
+.tabs a:hover {
+  color: #414f6b;
+  background-color: #b0b4be;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.tabs .active {
+  color: #414f6b;
+  background-color: #b0b4be;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+#tab1 {
+  background-image: url('../images/mountain-tab1.jpg');
+  background-size: cover, contain;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center 80%;
+  box-shadow: inset 0 0 0 1000px rgba(65, 79, 107, .3);
+}
+
+#tab2 {
+  background-image: url('../images/mountain-tab2.jpg');
+  background-size: cover, contain;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center 80%;
+  box-shadow: inset 0 0 0 1000px rgba(65, 79, 107, .3);
+}
+
+.schedule-content {
+  padding-top: 15vh;
+}
+
+.card {
+  width: 400px;
+  background-color: rgba(255, 255, 255, .6) !important;
+}
+
+.card-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  color: #414f6b;
+}
+
+/* Footer ---------------------------------------------------------- */
+footer {
+  background-color: #414f6b;
+  padding: 10px 0 10px 0;
+}
+
+.footer-text {
+  font-family: 'Lato', sans-serif;
+  color: #b0b4be;
+}
